@@ -2,46 +2,33 @@
 
 var React = require('react-native');
 var {
-    StyleSheet,
-    Text,
-    TextInput,
-    View,
-    TouchableHighlight,
-    ActivityIndicatorIOS,
-    Image,
-    Component,
+  StyleSheet,
+  Image,
+  View,
+  TouchableHighlight,
+  ListView,
+  Text,
+  Component
 } = React;
 
-var styles = StyleSheet.create({
-  description: {
-    marginBottom: 20,
-    fontSize: 18,
-    textAlign: 'center',
-    color: '#656565'
-  },
-  container: {
-    padding: 30,
-    marginTop: 65,
-    alignItems: 'center'
-  }
-});
-
 class SalesIndex extends Component {
-    render() {
-        return (
-            <View style={styles.container}>
-                <Text style={styles.description}>
-                Search for houses to buy!
-                </Text>
-                <Text style={styles.description}>
-                Search by place name, etc.
-                </Text>
-            </View>
-        );
-    }
+
+  constructor(props) {
+    super(props);
+    var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+    this.state = {
+      dataSource: ds.cloneWithRows(['row 1', 'row 2']),
+    };
+  }
+
+  render() {
+    return(
+    <ListView
+      dataSource={this.state.dataSource}
+      renderRow={(rowData) => <Text>{rowData}</Text>}
+    />
+    );
+  }
 }
 
 module.exports = SalesIndex;
-
-//main axis = horizontal
-//cross axis = vertical
