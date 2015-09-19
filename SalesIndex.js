@@ -1,5 +1,6 @@
 'use strict';
 
+var SaleView = require('./SaleView.js')
 var React = require('react-native');
 var {
   StyleSheet,
@@ -49,12 +50,17 @@ class SalesIndex extends Component {
         { title: 'Black Tshirt', image: 'http://uniqlo.scene7.com/is/image/UNIQLO/goods_133158_sub2?$pdp-detail$',
           description: 'cool black tshirt for cool guys' },
         { title: 'Maple Syrup', image: 'http://www.foodforthought.net/wp-content/uploads/maple-syrup-big.jpg',
-          description: 'coz you need something to dip your poutine in' }
+          description: 'to dip your poutine' }
         ]),
     };
   }
 
-  rowPressed()
+  rowPressed() {
+    this.props.navigator.push({
+      component: SaleView,
+      passProps: {image: 'http://www.foodforthought.net/wp-content/uploads/maple-syrup-big.jpg'}
+    });
+  }
 
   renderRow(rowData, sectionID, rowID) {
     return (
