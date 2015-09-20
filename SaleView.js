@@ -55,8 +55,8 @@ class SaleView extends Component {
     return (
       <View style={styles.container}>
         <Image source={{ uri: this.props.product.image }} style={styles.backgroundImage} />
-        <Text>Original Price: $80 </Text>
-        <Text>Discounted Price: $35 </Text>
+        <Text style={styles.title}>Original Price: $80 </Text>
+        <Text style={styles.title}>Discounted Price: $35 </Text>
         <TouchableHighlight style={styles.button} underlayColor='#eeeeee' onPress={() => this.buyButtonPressed()}>
           <Text style={styles.buttonText}>Buy now!</Text>
         </TouchableHighlight>
