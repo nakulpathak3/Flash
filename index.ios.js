@@ -1,6 +1,7 @@
 'use strict';
 
-var SalesIndex = require('./SalesIndex.js');
+var MerchantOrUser = require('./MerchantOrUser.js');
+
 var React = require('react-native');
 var styles =  React.StyleSheet.create({
   text: {
@@ -21,7 +22,7 @@ class FlashApp extends React.Component {
       style={styles.container}
       initialRoute={{
         title: 'Flash',
-        component: SalesIndex,
+        component: MerchantOrUser
       }}/>
     );
     //This constructs a navigation controller,

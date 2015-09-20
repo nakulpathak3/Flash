@@ -18,7 +18,7 @@ var styles = StyleSheet.create({
     resizeMode: 'stretch'
   },
   container: {
-    marginTop: 80,
+    marginTop: 65,
     flex: 1
   },
   title: {

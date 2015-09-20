@@ -23,7 +23,7 @@ var styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 25,
     fontWeight: 'bold',
-    color: '#000'
+    color: '#48BBEC'
   }
 });
 
@@ -35,7 +35,7 @@ class BuyPage extends Component {
         <Text style={styles.title}>Size</Text>
         <Text style={styles.title}>Color</Text>
         <TouchableHighlight underlayColor='#eeeeee' onPress={() => this.buyButtonPressed()}>
-          <Text style={styles.title}>Pay!</Text>
+          <Text style={styles.title}>Pay</Text>
         </TouchableHighlight>
       </View>
     );
