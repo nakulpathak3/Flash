@@ -1,6 +1,7 @@
 'use strict';
 
 var MerchantOrUser = require('./MerchantOrUser.js');
+var SalesIndex = require('./SalesIndex');
 
 var React = require('react-native');
 var styles =  React.StyleSheet.create({

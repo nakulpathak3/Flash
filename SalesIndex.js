@@ -47,9 +47,9 @@ class SalesIndex extends Component {
     var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
       dataSource: ds.cloneWithRows([
-        { title: 'Black Tshirt', image: 'http://uniqlo.scene7.com/is/image/UNIQLO/goods_133158_sub2?$pdp-detail$',
+        { title: "Shoeless Joe's T", image: 'http://uniqlo.scene7.com/is/image/UNIQLO/goods_133158_sub2?$pdp-detail$',
           description: 'cool black tshirt for cool guys' },
-        { title: 'Maple Syrup', image: 'http://www.foodforthought.net/wp-content/uploads/maple-syrup-big.jpg',
+        { title: 'Food for thought maple syrup', image: 'http://www.foodforthought.net/wp-content/uploads/maple-syrup-big.jpg',
           description: 'to dip your poutine' }
         ]),
     };
@@ -58,7 +58,8 @@ class SalesIndex extends Component {
   rowPressed() {
     this.props.navigator.push({
       component: SaleView,
-      passProps: {image: 'http://www.foodforthought.net/wp-content/uploads/maple-syrup-big.jpg'}
+      passProps: {product: { title: 'Food for thought maple syrup', image: 'http://www.foodforthought.net/wp-content/uploads/maple-syrup-big.jpg',
+          description: 'to dip your poutine' }}
     });
   }
 
@@ -68,7 +69,6 @@ class SalesIndex extends Component {
           underlayColor='#dddddd'>
         <View>
           <View style={styles.rowContainer}>
-          <Image style={styles.thumb} source={{ uri: rowData.image }} />
             <View  style={styles.textContainer}>
               <Text style={styles.title}>{rowData.title}</Text>
               <Text style={styles.description}
@@ -85,8 +85,7 @@ class SalesIndex extends Component {
     return(
     <ListView
       dataSource={this.state.dataSource}
-      renderRow={this.renderRow.bind(this)}
-    />
+      renderRow={this.renderRow.bind(this)} />
     );
   }
 

@@ -22,11 +22,20 @@ var styles =  StyleSheet.create({
   },
   container: {
     flex: 1,
-    margin: 80
+    marginTop: 80
+  },
+  buttonSquare: {
+    height: 180,
+    width: 180,
+    backgroundColor: '#eeeeee',
+    padding: 10,
+    marginTop: 30,
+    marginLeft: 40
   },
   textSquare: {
-    fontSize: 30,
-    flex: 4
+    fontSize: 36,
+    color: 'black',
+    alignSelf: 'center'
   }
 });
 
@@ -49,11 +58,11 @@ class MerchantOrUser extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TouchableHighlight onPress={() => this.userPressed()}
+        <TouchableHighlight style={styles.buttonSquare} onPress={() => this.userPressed()}
             underlayColor='#dddddd'>
             <Text style={styles.textSquare}>User</Text>
         </TouchableHighlight>
-        <TouchableHighlight onPress={() => this.merchantPressed()}
+        <TouchableHighlight style={styles.buttonSquare} onPress={() => this.merchantPressed()}
             underlayColor='#dddddd'>
             <Text style={styles.textSquare}>Merchant</Text>
         </TouchableHighlight>
