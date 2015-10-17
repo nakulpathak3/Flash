@@ -1,6 +1,7 @@
 'use strict';
 
 var MerchantOrUser = require('./MerchantOrUser.js');
+var Login = require('./Login.js');
 var SalesIndex = require('./SalesIndex');
 
 var React = require('react-native');
@@ -23,7 +24,7 @@ class FlashApp extends React.Component {
       style={styles.container}
       initialRoute={{
         title: 'Flash',
-        component: MerchantOrUser
+        component: Login
       }}/>
     );
     //This constructs a navigation controller,
