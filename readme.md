@@ -1,7 +1,7 @@
 # Flash
 
 Flash is an iOS (and future Android app) that provides users with a list of deals in products they are interested in. Once you click on a deal, you get 5 minutes to decide whether you want it or not.
-Deals are obtained from Shopify merchants through a Shopify App I am currently building.
+Deals are obtained from Shopify merchants through a Shopify App I am currently building using Node.js and Express.
 
 ## Tools
 The app is built using Facebook's [React Native](https://github.com/facebook/react-native).
