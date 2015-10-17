@@ -12,6 +12,7 @@ The app is built using Facebook's [React Native](https://github.com/facebook/rea
 ![Home screen](/home.png?raw=true "Home Screen")
 
 2. User is redirected to their Facebook account for requesting permissions to view their email address and get unique token.
+
 ![Facebook Redirect](/facebook_auth.png?raw=true "Facebook Redirect")
 
 3. Once they click 'Start Buying', they are shown a list of products which have great discounts.
