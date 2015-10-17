@@ -2,6 +2,7 @@
 
 Flash is an iOS (and future Android app) that provides users with a list of deals in products they are interested in. Once you click on a deal, you get 5 minutes to decide whether you want it or not.
 Deals are obtained from Shopify merchants through a Shopify App I am currently building using Node.js and Express.
+The project was started at Hack The North, 2015.
 
 ## Tools
 The app is built using Facebook's [React Native](https://github.com/facebook/react-native).
@@ -31,3 +32,4 @@ The app is built using Facebook's [React Native](https://github.com/facebook/rea
 
 ## Contributing
 I'd love help on the front end/UX of the app. If you'd like to join in on the project, email me at nakulpathak3@hotmail.com or make a PR. Thanks!
+
