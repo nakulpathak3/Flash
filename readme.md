@@ -26,6 +26,7 @@ The app is built using Facebook's [React Native](https://github.com/facebook/rea
 
 6. Using Braintree's API, the user then pays for the product with one touch!
 ![Braintree Payment](/screenshots/existing_payment.png?raw=true "Braintree Payment")
+
 ![Braintree Payment](/screenshots/braintree_payment.png?raw=true "Braintree Payment")
 
 ## Contributing
